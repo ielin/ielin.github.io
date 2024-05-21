@@ -236,9 +236,8 @@ nav div a:hover {
 /* CONTACT SECTION */
 .section-3 {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   color: #fff;
-  background: url('../img/bg3.jpg') no-repeat center center/cover;
 }
 
 .section-3-title {
@@ -249,4 +248,69 @@ nav div a:hover {
   justify-content: center;
   text-align: center;
   padding: 30px;
+}
+
+.section-3-content {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 400px;
+  gap: 30px;
+}
+
+.contact-input {
+  width: 450px;
+  height: 80px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.contact-input:focus {
+  border: #b11f1f solid 3px;
+}
+
+.contact-left textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.contact-left button {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #790f0f;
+  color: #fff;
+}
+
+.contact-left button:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.contact-right img {
+  animation: bounce 3s infinite;
+  width: 120%;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-50px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
 }
