@@ -1,33 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <script
-      src="https://kit.fontawesome.com/e17be31d76.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/main.js"></script>
-    <title>ielin</title>
-  </head>
 
-  <body>
-    <header class="showcase">
-      <!-- NAVBAR -->
-      <nav class="showcase-nav">
-        <a href="#" class="showcase-nav-logo">ielin</a>
-        <div class="showcase-nav-items">
-          <a href="#">About Me</a>
-          <a href="#">Projects</a>
-          <a href="#">Designs</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+  <script src="https://kit.fontawesome.com/e17be31d76.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+  <title>ielin</title>
+</head>
 
-      <!-- SECTION 1 -->
-      
-    </header>
-  </body>
+<body>
+  <header class="showcase">
+    <!-- SHOWCASE -->
+    <nav class="showcase-nav">
+      <a href="#" class="showcase-nav-logo">ielin</a>
+      <div class="showcase-nav-items">
+        <a href="#">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#">Designs</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="showcase-nav-icons">
+        <a href="https://www.linkedin.com/in/ielin-daisy-devashania-17505311a/" target="_blank"><i
+            class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/ielin" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/ielindaisy/" target="_blank"><i class="fa fa-instagram"
+            aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@ielinDaisy" target="_blank"><i class="fa fa-youtube-play"
+            aria-hidden="true"></i></a>
+      </div>
+    </nav>
+
+    <div class="showcase-content">
+      <h1>hello. i'm<span> ielin.</span></h1>
+      <p>nice meeting you.</p>
+    </div>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section-1">
+    <div class="section-1-title" id="projects">
+      <h2>PROJECTS</h2>
+    </div>
+
+    <div class="section-1-content">
+      <div class="card-container">
+        <!-- Project 1 -->
+        <a href="https://yellow-prince-games.itch.io/dreadfield-stadium" target="_blank" class="card">
+          <div class="card-image card-1 "></div>
+          <h2>Project 1 - Visual Novel</h2>
+          <p>Worked with a team to create a Visual Novel using Ren'Py Engine for Scream Dunk 2023 Game Jam. Contributed
+            as a writer and additional programmer.</p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.com/ielin/UNITY-Brick-Buster-Game" target="_blank" class="card">
+          <div class="card-image card-2"></div>
+          <h2>Project 2 - Brick Buster</h2>
+          <p>Created a Brick Buster game using Unity Engine.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGNS SECTION -->
+  <section class="section-2">
+    <div class="section-2-title" id="designs">
+      <h2>DESIGNS</h2>
+    </div>
+
+    <div class="section-2-img-gallery-main" id="fullImgBox">
+      <img src="../img/darthVader.png" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="section-2-content">
+      <div class="section-2-img-gallery">
+        <img src="../img/darthVader.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/mandalorian.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/acJapan.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/jinSakai.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/tlou.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/mirrorsEdge.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/daredevil.png" alt="" onclick="openFullImg(this.src)">
+        <img src="../img/deer.png" alt="" onclick="openFullImg(this.src)">
+      </div>
+    </div>
+  </section>
+
+   <!-- CONTACT SECTION -->
+   <section class="section-3">
+    <div class="section-3-title" id="contact">
+      <h2>LET'S GET IN TOUCH !</h2>
+    </div>
+
+    <div class="section-3">
+    </div>
+
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

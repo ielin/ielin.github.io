@@ -11,3 +11,17 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((items) => observer.observe(items));
+
+const fullImgBox = document.getElementById('fullImgBox');
+const fullImg = document.getElementById('fullImg');
+
+function openFullImg(imgSrc)
+{
+  fullImgBox.style.display = "flex";
+  fullImg.src = imgSrc
+}
+
+function closeFullImg()
+{
+  fullImgBox.style.display = "none";
+}
