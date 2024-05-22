@@ -8,11 +8,30 @@
 body {
   background: #000;
 }
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+}
 
 /* SHOWCASE - NAVIGATION BAR */
 .showcase {
   position: absolute;
 }
+
+.showcase-2 {
+  height: 90vh;
+  margin-top: 6rem;
+}
+
+.resume{
+  display: flex;
+  margin: auto;
+}
+
 .showcase-nav {
   position: fixed;
   top: 0;
@@ -106,10 +125,21 @@ nav div a:hover {
   color: #790f0f;
 }
 
-.showcase-content p {
+.showcase-content-p1 {
   font-size: 75px;
   animation: fadeIn 2s forwards;
-  animation-delay: 2.2s;
+  animation-delay: 3s;
+  opacity: 0;
+  margin-top: 5rem;
+}
+
+.showcase-content-p2 {
+  font-size: 30px;
+  text-align: center;
+  width: 80%;
+  margin-top: 2rem;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
   opacity: 0;
 }
 
@@ -253,7 +283,7 @@ nav div a:hover {
 .section-3-content {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .contact-left {
@@ -267,14 +297,14 @@ nav div a:hover {
   width: 450px;
   height: 80px;
   outline: none;
-  border: none;
+  border: #6b0b0b solid;
   border-radius: 10px;
   padding-left: 10px;
   font-size: 20px;
 }
 
 .contact-input:focus {
-  border: #b11f1f solid 3px;
+  border: #d31717 solid 3px;
 }
 
 .contact-left textarea {
@@ -291,7 +321,7 @@ nav div a:hover {
   color: #fff;
 }
 
-.contact-left button:hover{
+.contact-left button:hover {
   opacity: 80%;
   cursor: pointer;
 }
@@ -302,15 +332,15 @@ nav div a:hover {
 }
 
 @keyframes bounce {
-  0%{
+  0% {
     transform: translateY(0px);
   }
 
-  50%{
+  50% {
     transform: translateY(-50px);
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
